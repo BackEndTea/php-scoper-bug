@@ -2,6 +2,7 @@
 
 namespace ScoperBug;
 
+use Damn\Hello\Sir\Dependency;
 use Pimple\Container;
 
 class Application
@@ -13,5 +14,6 @@ class Application
         $container['parameter'] = 'Hello';
         
         echo $container['parameter'], "\n";
+        Dependency::hello();
     }
 }
